@@ -6,6 +6,5 @@
 	<%end%>
 
 </ul>
-<p style="text-decoration: none;color:red;background-color:yellow">
-<a style="text-decoration: none;color:red;background-color:yellow"><%= link_to "Delete Tag", tag_path(@tag), method: :delete, data: {confirm: "Really delete the tag?"} %></a>
-</p>
+
+<%= link_to "Delete Tag", tag_path(@tag), method: :delete, data: {confirm: "Really delete the tag?"}, class: "new_article"%>
